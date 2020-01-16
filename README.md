@@ -5,7 +5,12 @@
 </head>
 <body>
 <input type="button" id="target" value="주소 불러오기" />
-<script src="./script.js">
+<script>
+var t = document.getElementById('target');
+t.addEventListener('click', function(event){
+alert('전라북도 전주시 덕진구 두간6길9', +event.target.value);
+})
+
 </script>
 <form>
 <input type="button" onclick="remove" value="삭제">
@@ -101,13 +106,3 @@
 <br/>
 <br/>
 </tr>
-  
-  
-  
-  
-  
-  
-var t = document.getElementById('target');
-t.addEventListener('click', function(event){
-alert('전라북도 전주시 덕진구 두간6길9', +event.target.value);
-})
